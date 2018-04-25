@@ -48,14 +48,14 @@
                         <div class="form-group{{ $errors->has('profile_pic') ? ' has-error' : '' }}">
                             <label for="profile_pic" class="col-md-4 control-label">Profile Picture</label>
                         
-                        <div class="col-md-6">
-                                <input id="profile_pic" type="file" class="form-control" name="profile_pic">
+                            <div class="col-md-6">
+                                    <input id="profile_pic" type="file" class="form-control" name="profile_pic">
 
-                                @if ($errors->has('profile_pic'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('profile_pic') }}</strong>
-                                    </span>
-                                @endif
+                                    @if ($errors->has('profile_pic'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('profile_pic') }}</strong>
+                                        </span>
+                                    @endif
                             </div>
                         </div>
                         
@@ -70,7 +70,7 @@
 
                               
                             </div>
-                </div>
+                       </div>
             </form>
                 </div>
             </div>

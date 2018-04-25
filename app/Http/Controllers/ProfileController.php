@@ -33,12 +33,11 @@ class ProfileController extends Controller
             $file=Input::file('profile_pic');
             $file->move(public_path().'/uploads/',$file->getClientOriginalName());
             $url= URL::to("/").'/uploads/'.$file->getClientOriginalName();
-            return $url;
-            exit();
+ 
         }
 
         $profiles->profile_pic=$url;
         $profiles-> save();
-        return redirect('/profile')->with('response', 'category added successfully');
+        return redirect('/home')->with('response', 'Profile added successfully');
         }
 }
